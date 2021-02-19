@@ -1,0 +1,80 @@
+.fadeIn{
+    animation-duration:.5s;
+    animation-fill-mode:both;
+    animation-name: fadeIn;
+    will-change: transform;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+}
+}
+.fadeInDown{
+    animation-duration:.5s;
+    animation-fill-mode:both;
+    animation-name: fadeInDown;
+    will-change: transform;
+}
+
+@keyframes fadeInDown{
+    from{
+        transform: translate3d(0, -100%,0);
+    }
+    to{
+        transform: translate3d(0, 0%,0);
+    }
+}
+.fadeInUp{
+    animation-duration:.5s;
+    animation-fill-mode:both;
+    animation-name: fadeInUp;
+    will-change: transform;
+}
+
+@keyframes fadeInUp{
+    from{
+        -webkit-transform: translate3d(0,0%,0);
+    }
+    to{
+        -webkit-transform: translate3d(0, 100%,0);
+        
+
+    }
+
+}
+.rote:hover{
+    animation-duration: .4s;
+    animation-fill-mode: both;
+    animation-name: rote;
+    /* transition: transform .4s ease-in-out; */
+}
+@keyframes rote{
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+
+    }
+}
+.rote2{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: rote2;
+    transition: transform .4s ease-in-out;
+}
+@keyframes rote2{
+    from{
+        -webkit-transform: rotate(360deg);
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+
+    }
+}
+
+
+
